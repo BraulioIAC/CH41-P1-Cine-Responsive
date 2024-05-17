@@ -84,9 +84,6 @@ a:active{
     letter-spacing: 3px; /* Espaciado entre letras */
     color: #91b5cd; /* Color del texto de la sinopsis */
 }
-p{
-    border: 2px solid crimson;
-}
 .img-vid iframe{
     width: 70%; /* Relación para el video de YT */
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
