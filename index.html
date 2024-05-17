@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleGV.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2503/2503508.png" type="img/png">
+    <title>Cineplus +</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            background-color: aliceblue;
+        }
+        /*Grid para los estrenos*/
+        .estrenos{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(3fr, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Vista de telefono */
+        @media(max-width:767px){
+            .cine-plus{
+                font-size:30px;
+            }
+          .uno{
+                /*min-height: 850px;*/
+                height: auto;
+          }
+          nav{
+            font-size: 1rem;
+          }
+        }
+          /* Vista de Tablet */
+          @media(min-width:768px){
+              .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas:
+                  "header header"
+                  "horarios" "horarios"
+                  "estrenos" "estrenos";
+              }
+              .estrenos{
+                grid-template-columns: repeat(2, 1fr);
+              }
+              .uno{
+                height: 820px; /*750px*/
+              }
+              p{
+                height: 300px;
+              }
+          }
+          /* Vista Escritorio*/
+          @media(min-width:900px){
+              .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas:
+                  "header header header"
+                  "horarios" "horarios" "horarios"
+                  "estrenos" "estrenos" "estrenos";
+              }
+              .estrenos{
+                grid-template-columns: repeat(3, 1fr);
+              }
+              .uno{
+                min-height: 650px; /*700px*/
+                max-height: 900px;
+              }
+              p{
+                min-height: 300px;
+                max-height: 330px;
+              }
+          }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2 class="cine-plus">🍿CinePlus🍿</h2>
+    </header>
+    <div class="navbar">
+        <nav>
+            <a href="./index_responsive_GV.html">Inicio</a>
+            <a href="./formulario.html">Entradas</a>
+            <a href="#">Contáctanos</a>
+        </nav>
+    </div>
+    <section>
+        <div class="horarios">
+            <table >
+                <thead>Horario de operación  </thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Hora</th>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <th>10:00am a 11:00pm</th>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <th>10:00am a 11:00pm</th>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <th>10:00am a 11:00pm</th>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <th>10:00am a 11:00pm</th>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <th>10:00am a 11:00pm</th>
+                </tr>
+                <tr>
+                    <td style="color: red;">Sábado</td>
+                    <th style="color: red;">12:00pm a 10:00pm</th>
+                </tr>
+                <tr>
+                    <td style="color: red;">Domingo</td>
+                    <th style="color: red;">12:00pm a 10:00pm</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="estrenos">
+            <div style="justify-content: center;" class="uno">
+                <div class="titulo">Godzilla y Kong</div>
+                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45592/1/1/45592.jpg" alt="Pelicula Godzilla y Kong"></div>
+                <div class="descripcion">
+                    <legend>Sinopsis</legend>
+                    <p>¡La épica batalla continúa! El Monsterverse cinematográfico de Legendary Pictures sigue con el emocionante enfrentamiento de "Godzilla vs. Kong" con una aventura completamente nueva que enfrenta al poderoso Kong y al temible Godzilla contra una amenaza desconocida oculta dentro de nuestro mundo, desafiando su propia existencia, y la nuestra. "Godzilla x Kong: El Nuevo Imperio" profundiza en las historias de estos Titanes y sus orígenes, así como en los misterios de la Isla Calavera y más allá, mientras descubre la batalla mítica que ayudó a forjar a estos seres extraordinarios y los unió para siempre con la humanidad.</p>
+                </div> 
+                <div style="text-align: center;" class="img-vid">
+                    <iframe src="https://www.youtube.com/embed/rmoneJ_797s"></iframe>
+                </div>
+            </div>
+            <div style="justify-content: center;" class="uno">
+                <div class="titulo">Abigail</div>
+                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45847/1/1/45847.jpg" alt="Pelicula Godzilla y Kong"></div>
+                <div class="descripcion">
+                    <legend>Sinopsis</legend>
+                    <p>Los niños pueden ser tan monstruosos. Después de que un grupo de aspirantes a delincuentes secuestran a una bailarina de 12 años, hija de una poderosa figura del inframundo, sólo deberán vigilarla durante la noche para poder cobrar un rescate de 50 millones de dólares. En una mansión aislada, los captores comienzan a desaparecer, uno por uno, y descubren, para su creciente horror, que la pequeña niña con la que están encerrados no es normal</p>
+                </div> 
+                <div style="text-align: center;" class="img-vid">
+                    <iframe src="https://www.youtube.com/embed/m0OyDS61tY8"></iframe>
+                </div>
+            </div>
+            <div style="justify-content: center;" class="uno">
+                <div class="titulo">Anticristo</div>
+                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45446/1/1/45446.jpg" alt="Pelicula Godzilla y Kong"></div>
+                <div class="descripcion">
+                    <legend>Sinopsis</legend>
+                    <p>Lara está teniendo visiones horribles... y están empeorando. Su psiquiatra cree que la clave de su tratamiento es encontrar la fuente de su trauma, oculta en algún lugar del pasado de Lara. Ron, el marido de Lara y un cristiano devoto, tiene otros planes. Él cree que el problema es espiritual y que un exorcismo es la única forma de salvar su alma. Estimulados por un exorcista despiadado y una congregación de fanáticos, harán pasar a una mujer inocente por el infierno mientras intentan enviarla al cielo.</p>
+                </div> 
+                <div style="text-align: center;" class="img-vid">
+                    <iframe src="https://www.youtube.com/embed/1GPpid4Epio"></iframe>
+                </div>
+            </div>
+            <div style="justify-content: center;" class="uno">
+                <div class="titulo">Arthur</div>
+                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45716/1/1/45716.jpg" alt="Pelicula Godzilla y Kong"></div>
+                <div class="descripcion">
+                    <legend>Sinopsis</legend>
+                    <p>Descubre la fascinante historia de Mikael Lindnord (Mark Wahlberg) un deportista de resistencia sueco que se ganó los corazones de millones de personas cuando él y su equipo adoptaron a Arthur, un perro callejero mal herido de gran corazón que los acompañó durante una épica carrera de resistencia en la selva ecuatoriana.</p>
+                </div> 
+                <div style="text-align: center;" class="img-vid">
+                    <iframe src="https://www.youtube.com/embed/1e39R8JLZGw"></iframe>
+                </div>
+            </div>
+            <!--Segunda parte de peliculas-->
+            <div class="uno">
+                <div class="titulo">RE Star Wars: Episodio I</div>
+                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45979/1/1/45979.jpg" alt="Pelicula Star Wars"></div>
+                <div class="descripcion">
+                    <legend>Sinopsis</legend>
+                    <p>Obi-Wan Kenobi es un joven aprendiz caballero Jedi bajo la tutela de Qui-Gon Jinn; Anakin Skywalker, quien después será padre de Luke Skywalker y se convertirá en Darth Vader, solamente es un niño de 9 años. Cuando la Federación de Comercio corta todas las rutas al planeta Naboo, Qui-Gon y Obi-Wan son asignados para solucionar el problema.</p>
+                </div> 
+                <div style="text-align: center;" class="img-vid">
+                    <iframe src="https://www.youtube.com/embed/bD7bpG-zDJQ"></iframe>
+                </div>
+            </div>
+            <div class="uno">
+                <div class="titulo">El Planeta de Los Simios</div>
+                    <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45834/1/1/45834.jpg" alt="Pelicula Star Wars"></div>
+                    <div class="descripcion">
+                        <legend>Sinopsis</legend>
+                        <p>El director Wes Ball le da nueva vida a la épica franquicia global situada varias generaciones en el futuro tras el reinado de César, en el que los simios son la especie dominante que vive en armonía y los humanos han quedado reducidos a vivir en las sombras. Mientras un nuevo y tiránico líder simio construye su imperio, un joven simio emprende un viaje desgarrador que le llevará a cuestionarse todo lo que sabe sobre el pasado y a tomar decisiones que definirán el futuro de simios y humanos por igual.</p>
+                    </div> 
+                    <div style="text-align: center;" class="img-vid">
+                        <iframe src="https://www.youtube.com/embed/raYE6Ild7a4"></iframe>
+                    </div>
+            </div>
+            <div class="uno">
+                <div class="titulo">Garfield: Fuera de Casa</div>
+                    <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/46123/1/1/46123.jpg" alt="Pelicula Star Wars"></div>
+                    <div class="descripcion">
+                        <legend>Sinopsis</legend>
+                        <p>Garfield, el gato casero mundialmente famoso odia-lunes y amante de las lasañas, está por tener una aventura fuera de casa. Después de una inesperada reunión con su ausente padre – un sucio gato callejero llamado Vic – Garfield y su canino amigo Odie, son forzados a dejar su consentida vida para unirse a Vic en un divertido asalto de gran riesgo.</p>
+                    </div> 
+                    <div style="text-align: center;" class="img-vid">
+                        <iframe src="https://www.youtube.com/embed/Ua3PLSNGVBE"></iframe>
+                    </div>
+            </div>
+            <div class="uno">
+                <div class="titulo">Frida</div>
+                    <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/46246/1/1/46246.jpg" alt="Pelicula Star Wars"></div>
+                    <div class="descripcion">
+                        <legend>Sinopsis</legend>
+                        <p>Un viaje mágico e íntimamente crudo por la vida, la mente y el corazón de la icónica artista Frida Kahlo. Está contado, por primera vez, en sus propias palabras extraídas de su diario, reveladoras cartas, ensayos y entrevistas de revistas, y cobra una maravillosa vida con una animación lírica inspirada en su inolvidable arte.</p>
+                    </div> 
+                    <div style="text-align: center;" class="img-vid">
+                        <iframe src="https://www.youtube.com/embed/8bMVYK6lfqk"></iframe>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>Footer</footer>
+</body>
+</html>
