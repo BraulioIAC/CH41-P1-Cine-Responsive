@@ -7,75 +7,7 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2503/2503508.png" type="img/png">
     <title>Cineplus +</title>
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-rows: auto auto 1fr auto;
-            grid-template-columns: 1fr;
-            min-height: 100vh;
-            background-color: aliceblue;
-        }
-        /*Grid para los estrenos*/
-        .estrenos{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(3fr, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        /* Vista de telefono */
-        @media(max-width:767px){
-            .cine-plus{
-                font-size:30px;
-            }
-          .uno{
-                /*min-height: 850px;*/
-                height: auto;
-          }
-          nav{
-            font-size: 1rem;
-          }
-        }
-          /* Vista de Tablet */
-          @media(min-width:768px){
-              .grid-container{
-                grid-template-columns: auto;
-                grid-template-areas:
-                  "header header"
-                  "horarios" "horarios"
-                  "estrenos" "estrenos";
-              }
-              .estrenos{
-                grid-template-columns: repeat(2, 1fr);
-              }
-              .uno{
-                height: 820px; /*750px*/
-              }
-              p{
-                height: 300px;
-              }
-          }
-          /* Vista Escritorio*/
-          @media(min-width:900px){
-              .grid-container{
-                grid-template-columns: auto;
-                grid-template-areas:
-                  "header header header"
-                  "horarios" "horarios" "horarios"
-                  "estrenos" "estrenos" "estrenos";
-              }
-              .estrenos{
-                grid-template-columns: repeat(3, 1fr);
-              }
-              .uno{
-                min-height: 650px; /*700px*/
-                max-height: 900px;
-              }
-              p{
-                min-height: 300px;
-                max-height: 330px;
-              }
-          }
+
     </style>
 </head>
 <body>
@@ -84,7 +16,7 @@
     </header>
     <div class="navbar">
         <nav>
-            <a href="./index_responsive_GV.html">Inicio</a>
+            <a href="./index.html">Inicio</a>
             <a href="./formulario.html">Entradas</a>
             <a href="#">Contáctanos</a>
         </nav>
