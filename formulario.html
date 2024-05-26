@@ -1,48 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1698/1698477.png">
     <link rel="stylesheet" href="./formstyle.css">
-    <title>Formulario</title>    
+    <title>Formulario</title>
 </head>
-<body class="datos-entradas">
+<body>
     <header>
-        <center>
-            <h1>🍿Reserva tus entradas de cine🍿</h1>
-            <img src="https://img.freepik.com/foto-gratis/vista-elementos-cine-3d_23-2150720822.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1715385600&semt=sph" alt="imagen de un cine"><br>
-        </center>
+        <h1>💺Reserva tus entradas de cine💺</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/4222/4222064.png" alt="imagen asiento de cine"><br>
     </header>
-    <fieldset> 
-        <form action="" method="" class="datos-personales">
-            <div><h2 class="title">Datos personales</h2></div>
-                    <div class="nombre"><label for="nombre">Ingresa tu nombre completo:</label>
-                    <input type="text" id="nombre"></div>
-                    <div class="correo"><label for="correo">Ingresa tu email:</label>
-                    <input type="email" id="correo" placeholder="ejemplo@correo.com"></div>
-                    <div class="telefono"><label for="telefono">Ingresa tu nombre número de teléfono con clave lada:</label>
-                    <input type="tel" id="telefono" placeholder="55 1234 5678"></div>
-                    <label class="zona">Selecciona la zona en la que vives:<input list="ciudad" name="miciudad"/>
+
+    <fieldset>
+        <form action="" method="" class="datos-entradas" id="formulario">
+            <div id="uno">
+                <h2>Datos personales</h2>
+                    <label for="nombre">Ingresa tu nombre completo:</label>
+                    <input type="text" id="nombre"><br>
+                    <label for="correo">Ingresa tu email:</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com"><br>
+                    <label for="telefono">Ingresa tu nombre número de teléfono con clave lada:</label>
+                    <input type="tel" id="telefono" placeholder="55 1234 5678"><br>
+                    
+                    <label>Selecciona la zona en la que vives:<input list="ciudad" name="miciudad"/></label>
                     <datalist id="ciudad">
                         <option value="Zona Sur"></option>
                         <option value="Zona Norte"></option>
                         <option value="Zona Oriente"></option>
                         <option value="Zona Poniente"></option>
                         <option value="Zona Centro"></option>
-                    </datalist></label>
+                    </datalist><br>
             </div>
-        </body>
-    </fieldset> 
-    <fieldset class="entradas">
-        <body>
-            <div class="entradas">
+            <div id="dos">
                 <h2>Entradas</h2>
                 <label for="entradas-adulto">Ingrese el número de Adultos:</label>
-                <input type="number" id="entradas-adulto"> 
+                <input type="number" id="entradas-adulto"> <br> 
                 <label for="entradas-nino">Ingerese el número de Niños:</label>
-                <input type="number" id="entradas-nino">
-                <label class="pelicula" for="peliculas">Seleccione la pelicula</label>
+                <input type="number" id="entradas-nino"> <br>
+                <label for="peliculas">Seleccione la pelicula</label>
                 <input list="cartelera" id="peliculas">
                 <datalist id="cartelera">
                     <option value="Godzilla y Kong"></option>
@@ -53,7 +48,7 @@
                     <option value="El planeta de los simios"></option>
                     <option value="Garfield: Fuera de casa"></option>
                     <option value="Frida"></option>
-                </datalist>
+                </datalist> <br>
                 <label for="edad">Ingrese la fecha de la función:</label>
                 <input type="date" id="edad">
             </div><br>

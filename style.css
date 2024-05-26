@@ -1,7 +1,7 @@
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* ------------------------------------------------ Grid responsivo de la página */
 body{
     margin: 0;
     padding: 0;
@@ -11,13 +11,14 @@ body{
     min-height: 100vh;
     background-color: aliceblue;
 }
-/*Grid para los estrenos*/
+/* ----------------------------------------------- Grid para los estrenos*/
 .estrenos{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(3fr, 1fr));
     gap: 20px;
     padding: 20px;
 }
+/* -------------------------------------------------  Media queries*/
 /* Vista de telefono */
 @media(max-width:767px){
     .cine-plus{
@@ -31,33 +32,33 @@ body{
     font-size: 1rem;
   }
 }
-  /* Vista de Tablet */
-  @media(min-width:768px){
-      .estrenos{
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .uno{
-        height: 820px; /*750px*/
-      }
-      p{
-        height: 300px;
-      }
-  }
-  /* Vista Escritorio*/
-  @media(min-width:900px){
-      .estrenos{
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .uno{
-        min-height: 650px; /*700px*/
-        max-height: 900px;
-      }
-      p{
-        min-height: 300px;
-        max-height: 330px;
-      }
-  }
-
+/* Vista de Tablet */
+@media(min-width:768px){
+    .estrenos{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .uno{
+    height: 820px; /*750px*/
+    }
+    p{
+    height: 300px;
+    }
+}
+/* Vista Escritorio*/
+@media(min-width:900px){
+    .estrenos{
+    grid-template-columns: repeat(3, 1fr);
+    }
+    .uno{
+    min-height: 650px; /*700px*/
+    max-height: 900px;
+    }
+    p{
+    min-height: 300px;
+    max-height: 330px;
+    }
+}
+/* --------------------------------------------------------- Estilos del header y footer ------------------------------------------------------- */
 .cine-plus{ /* h2 del header */
     color: rgb(6, 6, 6); /* Color de texto */
     text-shadow: rgb(244, 242, 242) 5px 2px 4px; /* Añade sombra al texto */
@@ -65,7 +66,6 @@ body{
     letter-spacing: 10px; /* Espaciado entre las letras */
     font-size: 3rem; /* Tamaño de la fuente */
 }
-/* --------------------------------------------------------- Estilos del header y footer ------------------------------------------------------- */
 .header{
     background: linear-gradient(to bottom right, #153448, #91b5cd); /* color del fondo del header */
     border-radius: 10px; /* Borde radial */
@@ -74,6 +74,10 @@ footer{
     background: linear-gradient(to bottom right, #153448, #91b5cd); /* color de fondo del footer */
     font-size: xx-large; /* Tamaño de fuente del footer */
     letter-spacing: 10px; /* Espaciado entre letras */
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*Estilos de la navbar*/
 nav{
@@ -93,9 +97,10 @@ a:hover{
     background-color: #f03030; /* Color del hover (cuando se pasas el mouse por encima) */
     border-radius: 5px; /* Borde radial al hocer (porque al aplicarlo no tiene las propiedades de los elementos de la navbar) */
     padding: 10px; /* Añade un efecto a la navbar, resaltando el elemento que estamos tocando */
+    color: whitesmoke; /* Color cuando se hace click */
 }
 a:active{
-    color: whitesmoke; /* Color cuando se hace click */
+    color: black; /* Color cuando se hace click */
 }
 /* --------------------------------------------------------- Estilos de la tabla de horarios ----------------------------------------------------- */ 
 .horarios{

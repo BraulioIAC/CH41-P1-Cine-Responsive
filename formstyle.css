@@ -1,125 +1,74 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
+}
+
+/* Cuerpo responsivo */
+body {
+   /*background-col or: #f03030;*/
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    background: linear-gradient(to bottom right, #5196c4, #91b5cd);
 }
 
 header {
-    background-color: #15344877;
+    background-color: #070707;
     color: #ffffff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    justify-content: center;
     border-radius: 30px;
-    margin-bottom: 20px;
 }
 header img{
     border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: auto;
+    height: 35vh;
 }
 
 h1 {
     margin-bottom: 10px;
-    font-size: 2rem;
-}
-body {
-    /*background-color: #f03030;*/
-    background: linear-gradient(to bottom, #f03030, blueviolet);
-    margin: 10px;
-    padding: 10px;
 }
 
 fieldset {
-    background-color: #f03030;
-    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     margin: 20px auto;
-    padding: 30px;
-    width: 90%;
-    max-width: 800px;
-}
-.datos-personales,
-.entradas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
     padding: 20px;
-    
+    width: 80%;
+    /*max-width: 600px;*/
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: auto;
 }
 
-.title{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
 
-label, .zona, .pelicula {
-    display: inline-block;
-    margin-bottom: 5px;
-}
 
-input[type="text"], 
+input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="number"],
 input[type="date"],
 select {
-    width: 50%;
+    width: calc(100% - 10px);
     padding: 10px;
-    position: relative;
     margin-bottom: 10px;
-    background-color: aliceblue;
     border: 1px solid #cccccc;
     border-radius: 5px;
-  
 }
 
 button[type="submit"] {
     background-color: #f03030;
     color: #ffffff;
     padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    border: none;
-    display: block;
-    margin: 20px auto;
 }
 
 button[type="submit"]:hover {
     background-color: #0c263b;
-}
-/*Vista tablet*/
-@media (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .datos-personales,
-    .entradas {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .nombre, .correo, .telefono, .zona, .entradas label, .entradas input {
-        grid-column: span 2;
-    }
-}
-  /*Escritorio*/
-  @media (min-width: 900px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    .datos-personales,
-    .entradas {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .nombre, .correo, .telefono, .zona {
-        grid-template-rows: 1/4;
-    }
-
-    fieldset {
-        width: 70%;
-    }
 }
