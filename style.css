@@ -81,7 +81,7 @@ footer{
 }
 /*Estilos de la navbar*/
 nav{
-    height: 20px; /* Altura de la navbar */
+    height: 10hv; /* Altura de la navbar */
     background-color:  whitesmoke; /* Color de fondo */
     text-align: center; /* Alinea los elementos al centro */
     padding: 20px; /* Espacio entre el borde y el elemento */
