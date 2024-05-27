@@ -4,7 +4,7 @@ Este repositorio contiene el código fuente para la primera práctica del bootca
 
 ## Descripción
 
-El proyecto consiste en desarrollar un sitio web informativo para un cine local. Este sitio incluirá información sobre las películas en cartelera, horarios de funciones, precios de boletos y otra información relevante para los visitantes.
+El proyecto consiste en desarrollar un sitio web informativo para un cine local. Este sitio incluirá información sobre las películas en cartelera, así como información relevante para los visitantes.
 
 ## Características del Proyecto
 
@@ -22,12 +22,12 @@ El proyecto consiste en desarrollar un sitio web informativo para un cine local.
 
    Además de los conceptos vistos en clase deberás investigar y agregar lo siguiente:
    - `box-sizing`
-   - `outline`
-   - Posicionamiento
+   - **`outline`**
+   - **Posicionamiento**
    - `overflow`
-   - `opacity`
+   - **`opacity`**
    - Valores de `align-content`
-   - Valores de `align-items`
+   - **Valores de `align-items`**
    - `flex-shrink`
    - `flex-basis`
 

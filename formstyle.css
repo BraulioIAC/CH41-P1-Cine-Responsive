@@ -14,21 +14,26 @@ body {
 }
 
 header {
-    background-color: #070707;
-    color: #ffffff;
+    /*background-color: #070707;*/
+    background-image: url("src/img/Alimentos1.jpg");
     padding: 20px;
     text-align: center;
     justify-content: center;
-    border-radius: 30px;
 }
 header img{
-    border-radius: 10px;
     width: auto;
     height: 35vh;
 }
 
 h1 {
     margin-bottom: 10px;
+}
+
+header .first-text{
+    color: #070707;
+}
+header h1 .second-text{
+    color: #ffffff;
 }
 
 fieldset {
