@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2503/2503508.png" type="img/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Cineplus +</title>
     <style>
-
+        /* -------------------------------------------------  Media queries*/
+        /* Vista de telefono */
+        @media(max-width:768px){
+            .cine-plus{
+                font-size: 24px; /* Tamaño de fuente más pequeño para móviles */
+            }
+        .uno{
+                height: auto;
+        }
+        nav{
+            font-size: 1rem;
+        }
+        footer{
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+        }
+        /* Vista de Tablet */
+        @media(min-width:768px){
+            .estrenos{
+            grid-template-columns: repeat(2, 1fr);
+            }
+            footer{
+            display: flex;
+            flex-direction: row;
+        }
+        }
+        /* Vista Escritorio*/
+        @media(min-width:1024px){
+            .estrenos{
+            grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -18,7 +52,7 @@
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="./formulario.html">Entradas</a>
-            <a href="./alimentos.html">Snacks</a>
+            <a href="./alimentos.html">Alimentos</a>
         </nav>
     </div>
     <section>
@@ -65,10 +99,10 @@
             <div style="justify-content: center;" class="uno">
                 <div class="titulo">Godzilla y Kong</div>
                 <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45592/1/1/45592.jpg" alt="Pelicula Godzilla y Kong" style="outline: 8px ridge rgba(3, 21, 95, 0.6);
-                    border-radius: 2rem;"></div>
+                    border-radius: 1rem;"></div>
                 <div class="descripcion">
                     <legend>Sinopsis</legend>
-                    <p>¡La épica batalla continúa! El Monsterverse cinematográfico de Legendary Pictures sigue con el emocionante enfrentamiento de "Godzilla vs. Kong" con una aventura completamente nueva que enfrenta al poderoso Kong y al temible Godzilla contra una amenaza desconocida oculta dentro de nuestro mundo, desafiando su propia existencia, y la nuestra. "Godzilla x Kong: El Nuevo Imperio" profundiza en las historias de estos Titanes y sus orígenes, así como en los misterios de la Isla Calavera y más allá, mientras descubre la batalla mítica que ayudó a forjar a estos seres extraordinarios y los unió para siempre con la humanidad.</p>
+                    <p>¡La épica batalla continúa! El Monsterverse cinematográfico de Legendary Pictures sigue con el emocionante enfrentamiento de "Godzilla vs. Kong" con una aventura completamente nueva que enfrenta al poderoso Kong y al temible Godzilla contra una amenaza desconocida oculta dentro de nuestro mundo, desafiando su propia existencia, y la nuestra. "Godzilla x Kong: El Nuevo Imperio" profundiza en las historias de estos Titanes y sus orígenes, así como en los misterios de la Isla Calavera y más allá.</p>
                 </div> 
                 <div style="text-align: center;" class="img-vid">
                     <iframe src="https://www.youtube.com/embed/rmoneJ_797s"></iframe>
@@ -110,7 +144,8 @@
             <!--Segunda parte de peliculas-->
             <div class="uno">
                 <div class="titulo">RE Star Wars: Episodio I</div>
-                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45979/1/1/45979.jpg" alt="Pelicula Star Wars"></div>
+                <div style="text-align: center;"><img class="img-pel" src="https://static.cinepolis.com/img/peliculas/45979/1/1/45979.jpg" alt="Pelicula Star Wars" style="outline: 8px ridge rgba(3, 21, 95, 0.6);
+                    border-radius: 1rem;"></div>
                 <div class="descripcion">
                     <legend>Sinopsis</legend>
                     <p>Obi-Wan Kenobi es un joven aprendiz caballero Jedi bajo la tutela de Qui-Gon Jinn; Anakin Skywalker, quien después será padre de Luke Skywalker y se convertirá en Darth Vader, solamente es un niño de 9 años. Cuando la Federación de Comercio corta todas las rutas al planeta Naboo, Qui-Gon y Obi-Wan son asignados para solucionar el problema.</p>
@@ -125,7 +160,7 @@
                         border-radius: 2rem;"></div>
                     <div class="descripcion">
                         <legend>Sinopsis</legend>
-                        <p>El director Wes Ball le da nueva vida a la épica franquicia global situada varias generaciones en el futuro tras el reinado de César, en el que los simios son la especie dominante que vive en armonía y los humanos han quedado reducidos a vivir en las sombras. Mientras un nuevo y tiránico líder simio construye su imperio, un joven simio emprende un viaje desgarrador que le llevará a cuestionarse todo lo que sabe sobre el pasado y a tomar decisiones que definirán el futuro de simios y humanos por igual.</p>
+                        <p>El director Wes Ball le da nueva vida a la épica franquicia global situada varias generaciones en el futuro tras el reinado de César, en el que los simios son la especie dominante que vive en armonía y los humanos han quedado reducidos a vivir en las sombras. Mientras un nuevo y tiránico líder simio construye su imperio, un joven simio emprende un viaje desgarrador que le llevará a cuestionarse todo lo que sabe sobre el pasado.</p>
                     </div> 
                     <div style="text-align: center;" class="img-vid">
                         <iframe src="https://www.youtube.com/embed/raYE6Ild7a4"></iframe>
@@ -156,8 +191,13 @@
         </div>
     </section>
     <footer>
-        🍿CinePlus🍿
-
+        <div style="display: flex; justify-content: center; align-items: center;">CinePlus</div>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter twitter" aria-label="Twitter"></a>
+            <a href="https://wa.me" target="_blank" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
+        </div>
     </footer>
 </body>
 </html>

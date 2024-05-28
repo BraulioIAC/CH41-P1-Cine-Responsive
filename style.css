@@ -18,49 +18,9 @@ body{
     gap: 20px;
     padding: 20px;
 }
-/* -------------------------------------------------  Media queries*/
-/* Vista de telefono */
-@media(max-width:767px){
-    .cine-plus{
-        font-size:30px;
-    }
-  .uno{
-        /*min-height: 850px;*/
-        height: auto;
-  }
-  nav{
-    font-size: 1rem;
-  }
-}
-/* Vista de Tablet */
-@media(min-width:768px){
-    .estrenos{
-    grid-template-columns: repeat(2, 1fr);
-    }
-    .uno{
-    height: 820px; /*750px*/
-    }
-    p{
-    height: 300px;
-    }
-}
-/* Vista Escritorio*/
-@media(min-width:900px){
-    .estrenos{
-    grid-template-columns: repeat(3, 1fr);
-    }
-    .uno{
-    min-height: 650px; /*700px*/
-    max-height: 900px;
-    }
-    p{
-    min-height: 300px;
-    max-height: 330px;
-    }
-}
 /* --------------------------------------------------------- Estilos del header y footer ------------------------------------------------------- */
 .cine-plus{ /* h2 del header */
-    color: rgb(6, 6, 6); /* Color de texto */
+    /*color: rgb(6, 6, 6); /* Color de texto */
     text-shadow: rgb(244, 242, 242) 5px 2px 4px; /* Añade sombra al texto */
     text-align: center; /* Alinea el texto al centro */
     letter-spacing: 10px; /* Espaciado entre las letras */
@@ -74,10 +34,25 @@ footer{
     background: linear-gradient(to bottom right, #153448, #91b5cd); /* color de fondo del footer */
     font-size: xx-large; /* Tamaño de fuente del footer */
     letter-spacing: 10px; /* Espaciado entre letras */
-    height: 15vh;
-    display: flex;
+    height: 15vh; /* Tamaño del footer */
+    display: flex; /* Desplegar contenido flexible en el footer */
+    flex-direction: row; /* Despliega el contenido en fila */
+    justify-content: space-around; /* Lo distribuye en el espacio */
+}
+.redes-sociales {
+    display: flex; /* Desplegar contenido flexible de los iconos */
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+.redes-sociales a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.redes-sociales a:hover {
+    color: #0077b5; /* Cambiar este color al color de la red social */
 }
 /*Estilos de la navbar*/
 nav{
@@ -135,6 +110,9 @@ a:active{
     border-radius: 10px; /* Borde radial de la cards */
     padding: 1.5rem; /* Espaciado entre el borde y los elementos de la card */
     background-color: whitesmoke; /* Color de fondo */
+    display: flex; /* Aplica un flex para el contenido de las cards*/
+    flex-direction: column; /* Indica que el contenido se muestre de forma vertical */
+    align-content: space-around; /* Distribuye el contenido a lo largo de la card */
 }
 
 .titulo{
@@ -147,10 +125,12 @@ a:active{
     color: #91b5cd; /* Color del texto de la sinopsis */
 }
 .img-vid iframe{
+    margin-top: 2hv;
     width: 70%; /* Relación para el video de YT */
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2); /* Agrega una sombra al elemento del trailer */
 }
 .img-pel{
+    margin-top: 2vh;
     padding: 10px; /* Espaciado entre el borde de la card y la imagen de la pelicula */
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la imagen de las peliculas */
 }

@@ -11,17 +11,11 @@ body{
 }
 .alimentos{
     padding: 0;
-    margin-top: 30vh;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(4fr, 1fr));
     gap: 20px;
     margin-bottom: 3vh;
-}
-/* Vista Escritorio*/
-@media(min-width:900px){
-    .alimentos{
-    grid-template-columns: repeat(4, 1fr);
-    }
+    text-align: justify;
 }
 
 /* --------------------------------------------------------- Estilos del header y footer ------------------------------------------------------- */
@@ -34,11 +28,13 @@ body{
 }
 
 header{
-    background: linear-gradient(to bottom right, #153448, #91b5cd); /* color del fondo del header */
+    /*background: linear-gradient(to bottom right, #153448, #91b5cd); /* color del fondo del header */
+    background-image: url(src/img/Alimentos2.jpg);
+    background-position: center;
+    background-size: cover;
     border-radius: 10px; /* Borde radial */
     position: fixed; /*  */
     width: 100vw;
-    height: 30hv;
     z-index: 2;
 }
 footer{
@@ -47,8 +43,23 @@ footer{
     letter-spacing: 10px; /* Espaciado entre letras */
     height: 15vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes-sociales {
+    display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+.redes-sociales a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.redes-sociales a:hover {
+    color: #0077b5; /* Cambiar este color al color de la red social */
 }
 /*Estilos de la navbar*/
 nav{
@@ -97,5 +108,10 @@ a:active{
     padding: 10px;
     border-radius: 30px;
 }
-.descripcion-combo{
+.descripcion-combo legend{
+    color: #0c263b;
+    font-weight: bold;
+}
+.descripcion-combo p{
+    font-style: oblique;
 }

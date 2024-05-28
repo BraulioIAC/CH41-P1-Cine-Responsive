@@ -43,13 +43,36 @@ fieldset {
     margin: 20px auto;
     padding: 20px;
     width: 80%;
-    /*max-width: 600px;*/
     display: flex;
-    flex-direction: row;
+    flex-basis: fit-content;
     text-align: left;
     width: auto;
 }
 
+footer{
+    background: linear-gradient(to bottom right, #153448, #91b5cd); /* color de fondo del footer */
+    font-size: xx-large; /* Tamaño de fuente del footer */
+    letter-spacing: 10px; /* Espaciado entre letras */
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.redes-sociales a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.redes-sociales a:hover {
+    color: #0077b5; /* Cambiar este color al color de la red social */
+}
 
 
 input[type="text"],

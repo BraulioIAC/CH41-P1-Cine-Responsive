@@ -4,7 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="almentostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Snacks</title>
+    <style>
+        /* Vista de telefono */
+        @media(max-width:767px){
+            .snacks {
+                font-size: 24px; /* Tamaño de fuente más pequeño para móviles */
+            }
+            .alimentos{
+                margin-top: 15vh;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1023px){
+            .alimentos{
+                margin-top: 25vh;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        /* Vista Escritorio*/
+        @media(min-width:1024px){
+            .alimentos{
+                grid-template-columns: repeat(4, 1fr);
+                margin-top: 26vh;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -12,7 +38,7 @@
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="./formulario.html">Entradas</a>
-            <a href="./alimentos.html">Snacks</a>
+            <a href="./alimentos.html">Alimentos</a>
         </nav>
     </header>
     <section>
@@ -59,15 +85,15 @@
                     <img class="img-combo" src="src/img/combo3.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates $246</legend>
-                    <p>1 palomitas para llevar (285 gr) y 2 refrescos jumbo (1.2 ltr).</p>
+                    <legend>Maxicombo Nachos $370</legend>
+                    <p>1 palomitas para llevar (285 gr), 2 refrescos jumbo (1.2 ltr) y 2 nachos clásicos chicos (120 gr).</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-3">
+                <datalist id="tamaño-3">
+                    <option value="Chico">340MXN</option>
+                    <option value="Mediano">350MXN</option>
+                    <option value="Llevar">370MXN</option>
                 </datalist> <br>
             </div>
 
@@ -77,15 +103,15 @@
                     <img class="img-combo" src="src/img/combo4.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Maxicombo Familiar $440</legend>
+                    <p>3 refrescos tamaño jumbo (1.2 ltrs), 2 canastas de palomitas sabor mantequilla tamaño jumbo (203 gr) y 1 chocolates M&M’S® sabor cacahuate.</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-4">
+                <datalist id="tamaño-4">
+                    <option value="Chico">410MXN</option>
+                    <option value="Mediano">420MXN</option>
+                    <option value="Llevar">440MXN</option>
                 </datalist> <br>
             </div>
 
@@ -95,15 +121,15 @@
                     <img class="img-combo" src="src/img/combo5.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Palomitas $85</legend>
+                    <p>Deliciosas palomitas recién hechas en canasta.</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-5">
+                <datalist id="tamaño-5">
+                    <option value="Chico">80MXN</option>
+                    <option value="Mediano">85MXN</option>
+                    <option value="Llevar">95MXN</option>
                 </datalist> <br>
             </div>
 
@@ -113,15 +139,14 @@
                     <img class="img-combo" src="src/img/combo6.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Hot Dog Individual $75</legend>
+                    <p>Delicioso Hot Dog Cinépolis, elaborado con salchicha Oscar Mayer®.</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-6">
+                <datalist id="tamaño-6">
+                    <option value="Chico">65MXN</option>
+                    <option value="Jumbo">75MXN</option>
                 </datalist> <br>
             </div>
 
@@ -131,15 +156,14 @@
                     <img class="img-combo" src="src/img/combo7.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Nachos $85</legend>
+                    <p>Exquisitos nachos Clásicos/Doritos® acompañados de queso.</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-7">
+                <datalist id="tamaño-7">
+                    <option value="Chico">70MXN</option>
+                    <option value="Grandes">85MXN</option>
                 </datalist> <br>
             </div>
 
@@ -149,15 +173,15 @@
                     <img class="img-combo" src="src/img/combo8.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Refresco $80</legend>
+                    <p>Desde clásicos irresistibles hasta opciones bajas en calorías y personalización a tu medida.</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-8" id="tipo-combo">
+                <datalist id="tamaño-8">
+                    <option value="Mediano">72MXN</option>
+                    <option value="Grande">76MXN</option>
+                    <option value="Jumbo">80MXN</option>
                 </datalist> <br>
             </div>
 
@@ -167,15 +191,14 @@
                     <img class="img-combo" src="src/img/combo9.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Agua Embotelladas $37</legend>
+                    <p>Agua Embotellada</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-9">
+                <datalist id="tamaño-9">
+                    <option value="600ML">33MXN</option>
+                    <option value="1L">37MXN</option>
                 </datalist> <br>
             </div>
 
@@ -185,21 +208,27 @@
                     <img class="img-combo" src="src/img/combo10.png" alt="Combo img">
                 </div>
                 <div class="descripcion-combo">
-                    <legend>Combo Cuates</legend>
-                    <p>Palomitas grandes + 2 refrescos jumbo</p>
+                    <legend>Helado Micha $79</legend>
+                    <p>Delicioso helado Holanda® de distintos sabores como: Mordisko®, M&M's® y Oreo®, 473 ml.</p>
                 </div> 
-                <label for="tipo-combo">Tamaño del combo</label>
-                <input list="tamaño" id="tipo-combo">
-                <datalist id="tamaño">
-                    <option value="Chico"></option>
-                    <option value="Mediano"></option>
-                    <option value="Grande"></option>
+                <label for="tipo-combo">Combo:</label>
+                <input list="tamaño-10">
+                <datalist id="tamaño-10">
+                    <option value="M&M's®">79MXN</option>
+                    <option value="Mordisko®">79MXN</option>
+                    <option value="Oreo®">79MXN</option>
                 </datalist> <br>
             </div>
         </div>
     </section>
     <footer>
-        🍿CinePlus🍿
+        <div style="display: flex; justify-content: center; align-items: center;">CinePlus</div>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter twitter" aria-label="Twitter"></a>
+            <a href="https://wa.me" target="_blank" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
+        </div>
     </footer>
 </body>
 </html>

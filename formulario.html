@@ -3,7 +3,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1698/1698477.png">
     <link rel="stylesheet" href="./formstyle.css">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Entradas</title>
+    <style>
+        /* Vista de telefono */
+        @media(max-width:767px){
+        fieldset{
+            width: 320px;
+        }
+        footer{
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +36,7 @@
                     <label for="telefono">Ingresa tu nombre número de teléfono con clave lada:</label>
                     <input type="tel" id="telefono" placeholder="55 1234 5678"><br>
                     
-                    <label>Selecciona la zona en la que vives:<input list="ciudad" name="miciudad"/></label>
+                    <label>Selecciona la zona en la que vives:<input list="ciudad" name="miciudad" style="margin: 2vh 0 2vh 0"></label>
                     <datalist id="ciudad">
                         <option value="Zona Sur"></option>
                         <option value="Zona Norte"></option>
@@ -38,7 +52,7 @@
                 <label for="entradas-nino">Ingerese el número de Niños:</label>
                 <input type="number" id="entradas-nino"> <br>
                 <label for="peliculas">Seleccione la pelicula</label>
-                <input list="cartelera" id="peliculas">
+                <input list="cartelera" id="peliculas" style="margin: 2vh 0 2vh 0">
                 <datalist id="cartelera">
                     <option value="Godzilla y Kong"></option>
                     <option value="Abigail"></option>
@@ -51,10 +65,28 @@
                 </datalist> <br>
                 <label for="edad">Ingrese la fecha de la función:</label>
                 <input type="date" id="edad">
+                <label for="funcion">Funciones disponibles</label>
+                <input list="funciones" name="horarios" style="margin: 2vh 0 2vh 0">
+                <datalist id="funciones">
+                    <option value="10:00 - 12:00"></option>
+                    <option value="12:15 - 13:45"></option>
+                    <option value="14:00 - 15:30"></option>
+                    <option value="15:45 - 17:45"></option>
+                    <option value="18:00 - 20:00"></option>
+                    <option value="20:30 - 22:30"></option>
+                </datalist> <br>
             </div><br>
             <button type="submit" style="margin-left: 44%;">Enviar</button>
         </form>
     </fieldset>
-
+    <footer>
+        <div style="display: flex; justify-content: center; align-items: center;">CinePlus</div>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter twitter" aria-label="Twitter"></a>
+            <a href="https://wa.me" target="_blank" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
+        </div>
+    </footer>
 </body>
 </html>
