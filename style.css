@@ -55,7 +55,7 @@ footer{
     color: #0077b5; /* Cambiar este color al color de la red social */
 }
 /*Estilos de la navbar*/
-nav{
+.navbar nav{
     height: 10hv; /* Altura de la navbar */
     background-color:  whitesmoke; /* Color de fondo */
     text-align: center; /* Alinea los elementos al centro */
@@ -64,17 +64,17 @@ nav{
     border-radius: 20px; /* Borde Radial */
     font-size: 1.4em; /* Tamaño de fuente */
 }
-a {
+.navbar nav a {
     text-decoration: none; /* Quita la decoración de los elementos del navbar */
     color: black; /* Color del texto de la navbar */
 }
-a:hover{
-    background-color: #f03030; /* Color del hover (cuando se pasas el mouse por encima) */
+.navbar nav a:hover{
+    background-color: #0077b5; /* Color del hover (cuando se pasas el mouse por encima) */
     border-radius: 5px; /* Borde radial al hocer (porque al aplicarlo no tiene las propiedades de los elementos de la navbar) */
     padding: 10px; /* Añade un efecto a la navbar, resaltando el elemento que estamos tocando */
     color: whitesmoke; /* Color cuando se hace click */
 }
-a:active{
+.navbar nav a:active{
     color: black; /* Color cuando se hace click */
 }
 /* --------------------------------------------------------- Estilos de la tabla de horarios ----------------------------------------------------- */ 
@@ -113,6 +113,11 @@ a:active{
     display: flex; /* Aplica un flex para el contenido de las cards*/
     flex-direction: column; /* Indica que el contenido se muestre de forma vertical */
     align-content: space-around; /* Distribuye el contenido a lo largo de la card */
+}
+
+.uno:hover{
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 .titulo{

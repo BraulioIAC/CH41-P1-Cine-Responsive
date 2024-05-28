@@ -62,8 +62,9 @@ footer{
     color: #0077b5; /* Cambiar este color al color de la red social */
 }
 /*Estilos de la navbar*/
-nav{
+header nav{
     height: 10hv; /* Altura de la navbar */
+    width: 100hw;
     background-color:  whitesmoke; /* Color de fondo */
     text-align: center; /* Alinea los elementos al centro */
     padding: 20px; /* Espacio entre el borde y el elemento */
@@ -71,17 +72,17 @@ nav{
     border-radius: 20px; /* Borde Radial */
     font-size: 1.4em; /* Tamaño de fuente */
 }
-a {
+header nav a {
     text-decoration: none; /* Quita la decoración de los elementos del navbar */
     color: black; /* Color del texto de la navbar */
 }
-a:hover{
-    background-color: #f03030; /* Color del hover (cuando se pasas el mouse por encima) */
+header nav a:hover{
+    background-color: #0077b5; /* Color del hover (cuando se pasas el mouse por encima) */
     border-radius: 5px; /* Borde radial al hocer (porque al aplicarlo no tiene las propiedades de los elementos de la navbar) */
     padding: 10px; /* Añade un efecto a la navbar, resaltando el elemento que estamos tocando */
     color: whitesmoke; /* Color cuando se hace click */
 }
-a:active{
+header nav a:active{
     color: black; /* Color cuando se hace click */
 }
 
@@ -92,6 +93,10 @@ a:active{
     border-radius: 10px; /* Borde radial de la cards */
     padding: 1.5rem; /* Espaciado entre el borde y los elementos de la card */
     background-color: whitesmoke; /* Color de fondo */
+}
+.combo:hover{
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .titulo{
     background-color: #153448;
@@ -114,4 +119,9 @@ a:active{
 }
 .descripcion-combo p{
     font-style: oblique;
+}
+label[for="tipo-combo"]{
+    letter-spacing: 3px; /* Espaciado entre letras */
+    color: #3078a8; /* Color del texto de la sinopsis */
+    font-weight: bold;
 }

@@ -74,7 +74,6 @@ footer{
     color: #0077b5; /* Cambiar este color al color de la red social */
 }
 
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -99,4 +98,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0c263b;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in-out; /* Transición suave para todas las propiedades */
+}
+
+/* Estilo cuando el input recibe el foco */
+input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
 }
