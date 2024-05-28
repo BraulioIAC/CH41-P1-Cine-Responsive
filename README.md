@@ -42,14 +42,16 @@ El proyecto consiste en desarrollar un sitio web informativo para un cine local.
 ```plaintext
 CH41-Practica1/
 │
-├── index.html            # Página principal
-├── cartelera.html        # Página de cartelera
-├── pelicula.html         # Página de detalles de película
-├── horarios.html         # Página de horarios y precios
-├── contacto.html         # Página de contacto
+├── index.html             # Página principal
+├── formulario.html        # Página dpara reservar entradas
+├── alimentos.html         # Página de precios de alimentos
+├── style.css              # Hoja de estilos de index.html
+├── formstyle.css          # Hoja de estilos de formulario.html
+├── alimentostyle.css      # Hoja de estilos de alimentos.html
+├── README.md              # Archivo README con formato Markdown con la descripción del proyecto  
 │
-├── css/
-│   └── styles.css        # Archivo principal de estilos CSS
+├── src/
+│   └── img               # Carpeta que contiene imagenes necesarias para el proyecto
 │
 └── assets/
     ├── images/           # Carpeta para las imágenes
@@ -60,7 +62,7 @@ CH41-Practica1/
 Para obtener una copia local del proyecto, clona el repositorio utilizando el siguiente comando:
 
 ```bash
-git clone https://github.com/tu-usuario/CH41-Practica1.git
+git clone git@github.com:BraulioIAC/CH41-P1-Cine-Responsive.git
 
 Una vez clonado el repositorio, simplemente abre el archivo index.html en tu navegador web para ver el sitio en funcionamiento.
 
